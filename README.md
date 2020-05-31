@@ -426,21 +426,23 @@ git push -f origin your-branch
 ```
 
 # Commit Naming
-```
-feat: new feature, MINOR in semantic versioning 
-feat!: add exclamation mark when breaking change, MAJOR in semantic versioning
-fix: bug fix, PATCH in semantic versioning
-docs: changes in documentation
-style: formatting, missing semi colons, etc; no code change
-refactor: refactoring production code
-test: adding missing tests, refactoring tests; no production code change
-chore: updating grunt tasks etc; no production code change
-```
+* **feat:** New feature, MINOR in semantic versioning 
+* **feat!:** Add exclamation mark when breaking change, MAJOR in semantic versioning
+* **fix:** Bug fix, **PATCH** in semantic versioning
+* **refactor:** refactoring production code
+* **perf:** A code change that improves performance
+* **ci:** Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)
+* **docs:** changes in documentation
+* **style:** formatting, missing semi colons, etc; no code change
+* **test:** adding missing tests, refactoring tests; no production code change
+* **chore:** updating grunt tasks etc; no production code change
+
 
 **Resources :**
 * https://www.conventionalcommits.org/
 * https://seesparkbox.com/foundry/semantic_commit_messages
 * http://karma-runner.github.io/1.0/dev/git-commit-msg.html
+* https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines
 
 # TODO
 ### 3.3.2 Revert Commit
