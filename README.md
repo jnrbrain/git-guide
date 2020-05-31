@@ -416,7 +416,7 @@ git stash list # check your cleaning
 git stash apply
 ```
 
-### 3.3 Rewrite Histoyry
+### 3.3 Rewrite History
 ### 3.3.1 Amending
 * Change last commit :
 ```bash
@@ -425,6 +425,23 @@ git commit --amend
 git push -f origin your-branch
 ```
 
+# Commit Naming
+```
+feat: new feature, MINOR in semantic versioning 
+feat!: add exclamation mark when breaking change, MAJOR in semantic versioning
+fix: bug fix, PATCH in semantic versioning
+docs: changes in documentation
+style: formatting, missing semi colons, etc; no code change
+refactor: refactoring production code
+test: adding missing tests, refactoring tests; no production code change
+chore: updating grunt tasks etc; no production code change
+```
+
+**Resources :**
+* https://www.conventionalcommits.org/
+* https://seesparkbox.com/foundry/semantic_commit_messages
+* http://karma-runner.github.io/1.0/dev/git-commit-msg.html
+
 # TODO
 ### 3.3.2 Revert Commit
 ### 3.3.3 Interactive rebase
@@ -432,5 +449,5 @@ git push -f origin your-branch
 * reflog usage 
 
 # Resources
-https://github.com/tiimgreen/github-cheat-sheet
-https://www.atlassian.com/git/tutorials
+* https://github.com/tiimgreen/github-cheat-sheet
+* https://www.atlassian.com/git/tutorials
