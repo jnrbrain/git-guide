@@ -113,7 +113,7 @@ git stash push -m "single file" path/to/file.txt  # stash single file
 git apply # applies the first but does not pop it from list
 git pop   # applies and deletes it from stash stack  
 ```
-Untracked files :
+**Untracked files :**
 
 You can start to track them
 ```bash
